@@ -2,6 +2,9 @@
 
 ## References
 
+- [understanding-persistent-vector-pt-1](https://hypirion.com/musings/understanding-persistent-vector-pt-1)
+- [https://immutable-js.com/](https://immutable-js.com/)
+
 ## Use cases
 
 ### I want multiple versions of the structure of my content.
