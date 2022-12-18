@@ -2,7 +2,7 @@ import { describe, it, expect } from '@jest/globals';
 
 import { NodeType, Program } from '.';
 
-describe('src/index', () => {
+describe('PersistentTree', () => {
   describe('Program', () => {
     it('should create a Program', () => {
       const program = new Program();

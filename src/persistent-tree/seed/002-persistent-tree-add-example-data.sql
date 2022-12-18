@@ -47,4 +47,4 @@ values (
         'My program',
         'v1',
         '65054a99-7daf-42ba-ae94-490d039c567c'
-    )
+    );

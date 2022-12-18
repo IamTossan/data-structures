@@ -1,4 +1,4 @@
-create extension "uuid-ossp";
+create extension if not exists "uuid-ossp";
 create table programs (
     program_id uuid primary key default uuid_generate_v4(),
     slug varchar (50) not null,
@@ -12,4 +12,4 @@ create table program_nodes (
     name varchar (50) not null,
     type varchar (50) not null,
     content jsonb
-)
+);

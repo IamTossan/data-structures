@@ -43,7 +43,6 @@ async function run() {
   const results = await getProgramById('63f33221-8424-48a2-958f-946b94e93277');
 
   console.log(results);
-  // => [{result: 2}]
 
   await db.dispose();
 }
