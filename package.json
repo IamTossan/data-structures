@@ -12,7 +12,7 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "test-cov": "jest --coverage",
-    "dev-db-start": "pg-test start && pg-migrations apply --directory src/persistent-tree/seed",
+    "dev-db-start": "pg-test start && pg-migrations apply --directory seed/",
     "dev-db-stop": "pg-test stop"
   },
   "keywords": [],
