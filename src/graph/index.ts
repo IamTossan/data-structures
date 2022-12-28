@@ -84,4 +84,24 @@ export class Graph<T, U> {
     this._edges[e.id] = e;
     return e;
   }
+
+  *neightbors(node: Vertex<T>) {
+    for (const id of Object.keys(this._outgoing[node.id] || [])) {
+      yield this._vertices[id];
+    }
+  }
+
+  dfsTraversal(
+    node: Vertex<T>,
+    visit: (v: Vertex<T>) => any,
+    visited: Set<Vertex<T>['id']> = new Set(),
+  ) {
+    visit(node);
+    visited.add(node.id);
+    for (const n of this.neightbors(node)) {
+      if (!visited.has(n.id)) {
+        this.dfsTraversal(n, visit, visited);
+      }
+    }
+  }
 }
